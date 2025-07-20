@@ -95,10 +95,11 @@ h1 {
 }
 
 .team-image {
-  width: 200px;
-  height: 160px;
+  width: 100%;
+  max-width: 300px;
+  height: auto; /* 높이 고정 제거 */
   border-radius: 12px;
-  object-fit: cover;
+  object-fit: contain; /* cover → contain */
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
   background-color: #e0e0e0;
 }
@@ -195,9 +196,10 @@ button:active {
   }
 
   .team-image {
-    width: 100%;
-    max-width: 300px;
+    height: auto; 
+    object-fit: contain; 
   }
+}
 
   .video-info {
     text-align: center;
