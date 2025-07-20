@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>대한체조협회 영상 보기</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="./images/ci_logo_typeV.png" alt="대한체조협회 로고">
+    <h1>2025<br>라인루르 하계 세계대학경기대회</h1>
+    <div class="btn_box">
+      <ul>
+        <li class="on">리듬체조</li>
+         <li>기계체조(남)</li>
+         <li>기계체조(여)</li>
+      </ul>
+    </div>
+
+    <div class="info-box">
+      <p class="description">
+        아래 버튼을 클릭하면 영상 다시보기가 가능합니다.
+      </p>
+    <div class="rythm">
+      <div class="bottom-box">
+        <img src="./images/choeun.png" alt="하수이 이미지" class="team-image" />
+        <div class="video-info">
+          <p class="player-names">조은별</p>
+        
+          <p class="start-time">〈볼〉<br>영상 시작 시간: 50분 40초부터</p>
+            <p class="start-time">〈후프〉<br>영상 시작 시간: 1시간 47분 30초부터</p>
+          <div class="button-group">
+            <button onclick="goToVideo1()">조은별선수 영상 보러가기</button>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-box">
+        <img src="./images/Hasue.png" alt="하수이 이미지" class="team-image" />
+        <div class="video-info">
+          <p class="player-names">하수이</p>
+          <p class="start-time">〈후프〉<br>영상 시작 시간: 48분 30초부터</p>
+          <p class="start-time">〈볼〉<br>영상 시작 시간: 1시간 48분부터</p>
+          <div class="button-group">
+            <button onclick="goToVideo1()">하수이선수 영상 보러가기</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-box">
+        <img src="./images/KakaoTalk_Photo_2025-07-20-13-50-49.jpeg" alt="단체 이미지" class="team-image" />
+        <div class="video-info">
+          <p class="player-names">김민, 김주원, 고예진,<br>박도경, 이소윤, 이소윤</p>
+          <p class="start-time">〈그룹 리본5〉<br>영상 시작 시간: 1시간 51분 16초부터</p>
+          <p class="start-time">〈그룹 볼3 후프2〉<br>영상 시작 시간: 3시간 51분 10초부터</p>
+          <p class="start-time">〈그룹 리본5 결승전〉<br>영상 시작 시간: 1시간 51분 16초부터</p>
+            <p class="start-time">〈그룹 볼3 후프2 결승전〉<br>영상 시작 시간: 4분 40초부터</p>
+          <div class="button-group">
+            <button onclick="goToVideo()">그룹 리듬체조 영상 보러가기</button>
+         <button class="finalVideo" onclick="finalviedo()">리본5 결승전 <br>영상 보러가기</button>
+         <button class="finalVideo" onclick="finalviedo()">볼3 후프2 결승전 <br>영상 보러가기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="copyright">
+  © 2025 대한체조협회. 체조코인_권석규 All rights reserved.
+</footer>
+ </div>
+
+  <script>
+    const goToVideo = () => {
+      window.open("https://www.fisu.tv/videos/rhythmic-gymnastics-07-19-2025", "_blank");
+    };
+    //단체전 1
+    const goToVideo1 = () => {
+      window.open("https://www.fisu.tv/rhine-ruhr-2025-fisu-games-summer-replays/videos/rhythmic-gymnastics-group-3-hoop-ball-07-17-2025", "_blank");
+    };
+    // 하수이
+const goToVideo2 = () => {
+      window.open("https://www.fisu.tv/rhine-ruhr-2025-fisu-games-summer-replays/videos/rhythmic-gym-group-1-hoop-ball-07-17-2025", "_blank");
+    };
+    //조은별
+    const finalviedo = () => {
+      window.open("https://www.fisu.tv/videos/rhythmic-gymnastics-07-19-2025", "_blank");
+    };
+  </script>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>
