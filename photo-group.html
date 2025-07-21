@@ -18,11 +18,16 @@
 
     <a href="index.html"><button>뒤로가기</button></a> 
   </div>
-<div id="modal" class="modal">
+
+<div id="modal" class="modal" style="display:none;">
   <span id="modalClose" class="modal-close">&times;</span>
-  <img class="modal-content" id="modalImg" />
+  <img id="modalImg" class="modal-content" />
   <div id="modalCaption" class="modal-caption"></div>
+  
+  <button id="modalPrev" class="modal-nav">&#10094;</button> 
+  <button id="modalNext" class="modal-nav">&#10095;</button> 
 </div>
+
 <script type="module" src="./js/groupGallery.js"></script>
 </body>
 </html>
