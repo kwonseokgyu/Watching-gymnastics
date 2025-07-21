@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>그룹 리듬체조 사진</title>
+  <link rel="stylesheet" href="./css/photo.css" />
+  <link rel="icon" href="/images/favicon.png" type="image/png" />
+</head>
+<body>
+  <div class="container">
+    <img src="./images/ci_logo_typeV.png" alt="대한체조협회 로고" />
+    <h1>그룹 리듬체조<br>사진 모음</h1>
+
+    <p class="description">아래 사진은 그룹 경기 장면을 담고 있습니다.</p>
+
+    <div id="gallery" class="gallery"></div>
+
+    <a href="index.html"><button>뒤로가기</button></a> 
+  </div>
+<div id="modal" class="modal">
+  <span id="modalClose" class="modal-close">&times;</span>
+  <img class="modal-content" id="modalImg" />
+  <div id="modalCaption" class="modal-caption"></div>
+</div>
+<script type="module" src="./js/groupGallery.js"></script>
+</body>
+</html>

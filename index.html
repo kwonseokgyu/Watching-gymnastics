@@ -36,6 +36,7 @@
             <p class="start-time">〈후프〉<br>영상 시작 시간: 1시간 47분 30초부터</p>
             <div class="button-group">
               <button onclick="goToChoeunbyeolVideo()">조은별선수 영상 보러가기</button>
+              <a href="photo-choeun.html"><button>사진 보기</button></a>
             </div>
           </div>
         </div>
@@ -49,6 +50,7 @@
             <p class="start-time">〈볼〉<br>영상 시작 시간: 1시간 48분부터</p>
             <div class="button-group">
               <button onclick="goToHasueVideo()">하수이선수 영상 보러가기</button>
+              <a href="photo-hasuee.html"><button>사진 보기</button></a>
             </div>
           </div>
         </div>
@@ -65,6 +67,7 @@
               <button onclick="goToGroupVideo()">그룹 리듬체조 영상 보러가기</button>
               <button class="finalVideo" onclick="goToFinalRibbonVideo()">리본5 결승전 <br>영상 보러가기</button>
               <button class="finalVideo" onclick="goToFinalBallHoopVideo()">볼3 후프2 결승전 <br>영상 보러가기</button>
+              <a href="photo-group.html"><button>사진 보기</button></a>
             </div>
           </div>
         </div>
@@ -77,27 +80,22 @@
   </div>
 
   <script>
-    // 조은별 선수 영상
     const goToChoeunbyeolVideo = () => {
       window.open("https://www.fisu.tv/rhine-ruhr-2025-fisu-games-summer-replays/videos/rhythmic-gym-group-1-hoop-ball-07-17-2025", "_blank");
     };
 
-    // 하수이 선수 영상
     const goToHasueVideo = () => {
       window.open("https://www.fisu.tv/rhine-ruhr-2025-fisu-games-summer-replays/videos/rhythmic-gymnastics-group-3-hoop-ball-07-17-2025", "_blank");
     };
 
-    // 그룹 리듬체조 예선 영상
     const goToGroupVideo = () => {
       window.open("https://www.fisu.tv/videos/rhythmic-gymnastics-07-19-2025", "_blank");
     };
 
-    // 리본5 결승전
     const goToFinalRibbonVideo = () => {
       window.open("https://www.fisu.tv/videos/rhythmic-gymnastics-07-19-2025", "_blank");
     };
 
-    // 볼3 후프2 결승전
     const goToFinalBallHoopVideo = () => {
       window.open("https://www.fisu.tv/videos/rhythmic-gymnastics-07-19-2025", "_blank");
     };
